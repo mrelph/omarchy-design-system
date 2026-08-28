@@ -704,7 +704,8 @@
 }
 :root {
   /* typography (base 12, tracks `omarchy font set` via the monospace alias) */
-  --om-font: "JetBrainsMono Nerd Font", "JetBrains Mono", ui-monospace, monospace;
+  /* local Nerd Font -> JetBrains Mono (Google Fonts) -> "Omarchy Glyphs" (tokens/omarchy-glyphs.woff2, Nerd Font icon subset) -> generic */
+  --om-font: "JetBrainsMono Nerd Font", "JetBrains Mono", "Omarchy Glyphs", ui-monospace, monospace;
   --om-font-base: 12px;
   --om-font-caption: calc(var(--om-font-base) * 0.833);  /* 10px */
   --om-font-body-small: calc(var(--om-font-base) * 0.917);  /* 11px */

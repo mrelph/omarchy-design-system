@@ -1,4 +1,4 @@
-import json, os, pathlib
+import json, os, pathlib, base64
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 (ROOT/"previews").mkdir(parents=True, exist_ok=True)
 (ROOT/"tokens").mkdir(exist_ok=True)
@@ -78,7 +78,8 @@ css = ["/* Omarchy Design System — CSS tokens. Mirrors qs.Commons.Color/Style.
  *[css_theme(f'[data-om-theme="{k}"]', t) for k,t in THEMES.items()],
  ":root {",
  "  /* typography (base 12, tracks `omarchy font set` via the monospace alias) */",
- '  --om-font: "JetBrainsMono Nerd Font", "JetBrains Mono", ui-monospace, monospace;',
+ '  /* local Nerd Font -> JetBrains Mono (Google Fonts) -> "Omarchy Glyphs" (tokens/omarchy-glyphs.woff2, Nerd Font icon subset) -> generic */',
+ '  --om-font: "JetBrainsMono Nerd Font", "JetBrains Mono", "Omarchy Glyphs", ui-monospace, monospace;',
  "  --om-font-base: 12px;"]
 for k,(m,p) in FONT.items(): css.append(f"  --om-font-{k}: calc(var(--om-font-base) * {m});  /* {p}px */")
 css.append("  /* spacing: Style.space(px) at scale 1.0 */")
@@ -104,7 +105,11 @@ css += ["  /* geometry */","  --om-radius: 0px;            /* Hyprland decoratio
 
 # ---------- preview scaffolding
 css_text=(ROOT/"tokens/omarchy.css").read_text()
-BASE = """<style>
+GLYPHS_B64 = base64.b64encode((ROOT/"tokens/omarchy-glyphs.woff2").read_bytes()).decode() if (ROOT/"tokens/omarchy-glyphs.woff2").exists() else ""
+FONT_HEAD = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+  '<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">'
+  '<style>@font-face{font-family:"Omarchy Glyphs";src:url(data:font/woff2;base64,' + GLYPHS_B64 + ') format("woff2");font-display:block}</style>')
+BASE = FONT_HEAD + """<style>
 %s
 *{box-sizing:border-box}html,body{margin:0}
 body{padding:24px;min-height:100vh}
