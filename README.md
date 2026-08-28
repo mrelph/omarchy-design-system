@@ -73,4 +73,13 @@ Live reference: `omarchy dev ui-preview` opens the shell's own gallery, rendered
 - **Notification**: 380 wide; urgency → accent stripe (critical = urgent, low = dim, normal = countdown/accent).
 - **Loading / stale**: keep stale data visible; show a spinner in place, never blank the panel.
 
-See `guides/plugin-checklist.md` and `guides/qml-recipes.md`.
+## Additive layers (v1.1)
+
+- **Data viz** — `tokens/omarchy-viz.css`, `tokens/viz.tokens.json`, derived per theme by `tools/viz.py` and checked with the dataviz validator; cards `viz-*.html`. See `guides/dataviz.md`.
+- **Floating app** — window anatomy from Hyprland defaults, app shell, command palette, dialogs, states, table; cards `app-*.html`, `command-palette.html`. See `guides/floating-app.md`.
+- **Motion** — tokens lifted from Hyprland's animation table (`motion.html`).
+- **Iconography, density, feedback, contrast matrix** — `iconography.html`, `density.html`, `feedback.html`, `a11y-contrast.html`.
+
+Rebuild everything: `python3 tools/build.py` (set `OMARCHY_DS_VALIDATOR` to the dataviz `validate_palette.js` to record validator results).
+
+See `guides/plugin-checklist.md`, `guides/qml-recipes.md`, `guides/dataviz.md`, `guides/floating-app.md`.

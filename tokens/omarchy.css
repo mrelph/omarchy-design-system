@@ -764,3 +764,22 @@
   --om-bar-size-h: 26px; --om-bar-size-v: 28px; --om-bar-icon-slot: 27px; --om-bar-status-slot: 21px;
 }
 body.om { background: var(--om-background); color: var(--om-foreground); font: var(--om-font-body)/1.45 var(--om-font); }
+
+:root {
+  /* motion — from Hyprland defaults (speed ×100ms) */
+  --om-ease-easeOutQuint: cubic-bezier(0.23,1,0.32,1);
+  --om-ease-easeInOutCubic: cubic-bezier(0.65,0.05,0.36,1);
+  --om-ease-linear: linear;
+  --om-ease-almostLinear: cubic-bezier(0.5,0.5,0.75,1);
+  --om-ease-quick: cubic-bezier(0.15,0,0.1,1);
+  --om-motion-enter: 400ms var(--om-ease-easeOutQuint);
+  --om-motion-exit: 150ms var(--om-ease-linear);
+  --om-motion-fade: 300ms var(--om-ease-quick);
+  --om-motion-micro: 150ms var(--om-ease-almostLinear);
+  --om-motion-emphasis: 540ms var(--om-ease-easeOutQuint);
+  /* floating window — Hyprland defaults */
+  --om-win-gap: 10px; --om-win-gap-in: 5px; --om-win-border: 2px; --om-win-border-inactive: rgba(89,89,89,.67); --om-win-opacity: .985; --om-win-opacity-inactive: .96;
+  /* status */
+  --om-status-good: var(--om-green); --om-status-warning: var(--om-yellow); --om-status-serious: var(--om-orange); --om-status-critical: var(--om-urgent); --om-status-info: var(--om-accent);
+}
+@media (prefers-reduced-motion: reduce) { :root { --om-motion-enter: 0s; --om-motion-exit: 0s; --om-motion-fade: 0s; --om-motion-micro: 0s; --om-motion-emphasis: 0s; } }

@@ -1,0 +1,2149 @@
+{
+  "$schema": "omarchy-viz-tokens/1",
+  "method": "dataviz snap-to-passing over theme roles; see guides/dataviz.md",
+  "defaultTheme": "lake-sunset",
+  "themes": {
+    "catppuccin-latte": {
+      "mode": "light",
+      "surface": "#eff1f5",
+      "ink": "#4c4f69",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "green",
+          "hex": "#3e9e29"
+        },
+        {
+          "slot": 2,
+          "hue": "blue",
+          "hex": "#1e66f5"
+        },
+        {
+          "slot": 3,
+          "hue": "orange",
+          "hex": "#d94f2c"
+        },
+        {
+          "slot": 4,
+          "hue": "cyan",
+          "hex": "#08c2cb"
+        },
+        {
+          "slot": 5,
+          "hue": "yellow",
+          "hex": "#de8d1b"
+        },
+        {
+          "slot": 6,
+          "hue": "magenta",
+          "hex": "#d361b6"
+        }
+      ],
+      "worstAdjacentCVD": 19.6,
+      "worstAdjacentNormal": 23.5,
+      "diverging": {
+        "negative": "#de8d1b",
+        "midpoint": "#cfd2db",
+        "positive": "#1e66f5"
+      },
+      "ordinal": [
+        "#7da8f7",
+        "#598cef",
+        "#3370e7",
+        "#034fdd"
+      ],
+      "sequential": [
+        "#d1e1ff",
+        "#b4cefe",
+        "#97bbfd",
+        "#79a7fd",
+        "#5a92ff",
+        "#3b7cfe",
+        "#1e66f5"
+      ],
+      "status": {
+        "good": "#3e9e29",
+        "warning": "#de8d1b",
+        "serious": "#d94f2c",
+        "critical": "#d20f39"
+      },
+      "chrome": {
+        "surface": "#eff1f5",
+        "ink": "#4c4f69",
+        "secondary": "#5f627a",
+        "muted": "#797c91",
+        "gridline": "#dadce3",
+        "baseline": "#c3c6d0",
+        "other": "#b7bac6",
+        "emphasisAccent": "#1e66f5"
+      },
+      "contrast": {
+        "ink/surface": 7.06,
+        "muted/surface": 3.64,
+        "accent/surface": 4.34,
+        "urgent/surface": 4.8
+      },
+      "name": "Catppuccin Latte",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 6 inside L 0.43\u20130.77",
+          "[PASS] Chroma floor           all 6 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #de8d1b\u2194#08c2cb \u0394E 19.6 (deutan) \u00b7 tritan 7.0",
+          "[PASS] Normal-vision floor    worst adjacent #d361b6\u2194#de8d1b \u0394E 23.5 (normal)",
+          "[WARN] Contrast vs surface    below 3:1 \u2014 relief required (visible labels or table view): [[\"#08c2cb\",1.94],[\"#de8d1b\",2.34]]"
+        ]
+      }
+    },
+    "catppuccin": {
+      "mode": "dark",
+      "surface": "#1e1e2e",
+      "ink": "#cdd6f4",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#d06f61"
+        },
+        {
+          "slot": 2,
+          "hue": "cyan",
+          "hex": "#07a695"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#b0891c"
+        },
+        {
+          "slot": 4,
+          "hue": "magenta",
+          "hex": "#be70ac"
+        },
+        {
+          "slot": 5,
+          "hue": "green",
+          "hex": "#5ea25a"
+        },
+        {
+          "slot": 6,
+          "hue": "blue",
+          "hex": "#618fdb"
+        },
+        {
+          "slot": 7,
+          "hue": "red",
+          "hex": "#cf6a88"
+        }
+      ],
+      "worstAdjacentCVD": 8.4,
+      "worstAdjacentNormal": 17.8,
+      "diverging": {
+        "negative": "#b0891c",
+        "midpoint": "#393b4d",
+        "positive": "#618fdb"
+      },
+      "ordinal": [
+        "#3f5475",
+        "#57729f",
+        "#6f93cc",
+        "#89b4fa"
+      ],
+      "sequential": [
+        "#192c4a",
+        "#2a4065",
+        "#3b5681",
+        "#4e6c9e",
+        "#6183bb",
+        "#759bda",
+        "#89b4fa"
+      ],
+      "status": {
+        "good": "#5ea25a",
+        "warning": "#b0891c",
+        "serious": "#d06f61",
+        "critical": "#cf6a88"
+      },
+      "chrome": {
+        "surface": "#1e1e2e",
+        "ink": "#cdd6f4",
+        "secondary": "#b4bbd8",
+        "muted": "#9399b3",
+        "gridline": "#303143",
+        "baseline": "#44465a",
+        "other": "#505367",
+        "emphasisAccent": "#89b4fa"
+      },
+      "contrast": {
+        "ink/surface": 11.34,
+        "muted/surface": 5.82,
+        "accent/surface": 7.79,
+        "urgent/surface": 7.08
+      },
+      "name": "Catppuccin",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 7 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 7 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #07a695\u2194#d06f61 \u0394E 8.4 (deutan) \u00b7 tritan 3.9",
+          "[PASS] Normal-vision floor    worst adjacent #b0891c\u2194#07a695 \u0394E 17.8 (normal)",
+          "[PASS] Contrast vs surface    all 7 >= 3:1"
+        ]
+      }
+    },
+    "ethereal": {
+      "mode": "dark",
+      "surface": "#060B1E",
+      "ink": "#ffcead",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#d0733b"
+        },
+        {
+          "slot": 2,
+          "hue": "magenta",
+          "hex": "#bb71b1"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#b08926"
+        },
+        {
+          "slot": 4,
+          "hue": "blue",
+          "hex": "#7d82d9"
+        },
+        {
+          "slot": 5,
+          "hue": "red",
+          "hex": "#e95757"
+        }
+      ],
+      "worstAdjacentCVD": 16.2,
+      "worstAdjacentNormal": 16.4,
+      "diverging": {
+        "negative": "#b08926",
+        "midpoint": "#2a2937",
+        "positive": "#7d82d9"
+      },
+      "ordinal": [
+        "#40436e",
+        "#545890",
+        "#696db4",
+        "#7e83da"
+      ],
+      "sequential": [
+        "#19193f",
+        "#272856",
+        "#37396f",
+        "#484a88",
+        "#595ca2",
+        "#6b6fbd",
+        "#7d82d9"
+      ],
+      "status": {
+        "good": "#aa8d80",
+        "warning": "#b08926",
+        "serious": "#d0733b",
+        "critical": "#e95757"
+      },
+      "chrome": {
+        "surface": "#060B1E",
+        "ink": "#ffcead",
+        "secondary": "#d9b199",
+        "muted": "#aa8d80",
+        "gridline": "#1d1f2e",
+        "baseline": "#393640",
+        "other": "#49424a",
+        "emphasisAccent": "#7d82d9"
+      },
+      "contrast": {
+        "ink/surface": 13.67,
+        "muted/surface": 6.36,
+        "accent/surface": 5.65,
+        "urgent/surface": 5.81
+      },
+      "name": "Ethereal",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 5 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 5 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #bb71b1\u2194#d0733b \u0394E 16.2 (deutan) \u00b7 tritan 3.7",
+          "[PASS] Normal-vision floor    worst adjacent #bb71b1\u2194#d0733b \u0394E 16.4 (normal)",
+          "[PASS] Contrast vs surface    all 5 >= 3:1"
+        ]
+      }
+    },
+    "everforest": {
+      "mode": "dark",
+      "surface": "#2d353b",
+      "ink": "#d3c6aa",
+      "monochrome": false,
+      "dropped": [
+        "cyan",
+        "red"
+      ],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#cd744b"
+        },
+        {
+          "slot": 2,
+          "hue": "blue",
+          "hex": "#00a599"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#b3871d"
+        },
+        {
+          "slot": 4,
+          "hue": "magenta",
+          "hex": "#c76d9b"
+        },
+        {
+          "slot": 5,
+          "hue": "green",
+          "hex": "#7c9c41"
+        }
+      ],
+      "worstAdjacentCVD": 11.0,
+      "worstAdjacentNormal": 18.4,
+      "diverging": {
+        "negative": "#c76d9b",
+        "midpoint": "#484d4e",
+        "positive": "#00a599"
+      },
+      "ordinal": [
+        "#4c6a66",
+        "#5d847e",
+        "#6e9f98",
+        "#7fbbb3"
+      ],
+      "sequential": [
+        "#27433f",
+        "#345551",
+        "#426863",
+        "#517c77",
+        "#60918a",
+        "#6fa69e",
+        "#7fbbb3"
+      ],
+      "status": {
+        "good": "#7c9c41",
+        "warning": "#b3871d",
+        "serious": "#cd744b",
+        "critical": "#00a599"
+      },
+      "chrome": {
+        "surface": "#2d353b",
+        "ink": "#d3c6aa",
+        "secondary": "#bbb29b",
+        "muted": "#9d9787",
+        "gridline": "#3f4547",
+        "baseline": "#535655",
+        "other": "#5e605d",
+        "emphasisAccent": "#7fbbb3"
+      },
+      "contrast": {
+        "ink/surface": 7.38,
+        "muted/surface": 4.28,
+        "accent/surface": 5.74,
+        "urgent/surface": 5.74
+      },
+      "name": "Everforest",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 5 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 5 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #7c9c41\u2194#c76d9b \u0394E 11.0 (deutan) \u00b7 tritan 4.8",
+          "[PASS] Normal-vision floor    worst adjacent #c76d9b\u2194#b3871d \u0394E 18.4 (normal)",
+          "[PASS] Contrast vs surface    all 5 >= 3:1"
+        ]
+      }
+    },
+    "flexoki-light": {
+      "mode": "light",
+      "surface": "#FFFCF0",
+      "ink": "#100F0F",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#d2782d"
+        },
+        {
+          "slot": 2,
+          "hue": "magenta",
+          "hex": "#cc5c96"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#cfa111"
+        },
+        {
+          "slot": 4,
+          "hue": "cyan",
+          "hex": "#09bdb1"
+        },
+        {
+          "slot": 5,
+          "hue": "red",
+          "hex": "#d24e42"
+        },
+        {
+          "slot": 6,
+          "hue": "blue",
+          "hex": "#1f5da5"
+        },
+        {
+          "slot": 7,
+          "hue": "green",
+          "hex": "#879a38"
+        }
+      ],
+      "worstAdjacentCVD": 14.2,
+      "worstAdjacentNormal": 16.4,
+      "diverging": {
+        "negative": "#cfa111",
+        "midpoint": "#cecbc2",
+        "positive": "#1f5da5"
+      },
+      "ordinal": [
+        "#91b2dd",
+        "#6c96cb",
+        "#487ab9",
+        "#205ea6"
+      ],
+      "sequential": [
+        "#dfedfe",
+        "#b5d5fe",
+        "#91bdf4",
+        "#75a5e1",
+        "#5a8dcd",
+        "#3e75b9",
+        "#205ea6"
+      ],
+      "status": {
+        "good": "#879a38",
+        "warning": "#cfa111",
+        "serious": "#d2782d",
+        "critical": "#d24e42"
+      },
+      "chrome": {
+        "surface": "#FFFCF0",
+        "ink": "#100F0F",
+        "secondary": "#292827",
+        "muted": "#4d4c49",
+        "gridline": "#dedbd1",
+        "baseline": "#bbb9b0",
+        "other": "#a9a79f",
+        "emphasisAccent": "#205EA6"
+      },
+      "contrast": {
+        "ink/surface": 18.62,
+        "muted/surface": 8.36,
+        "accent/surface": 6.36,
+        "urgent/surface": 4.21
+      },
+      "name": "Flexoki Light",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 7 inside L 0.43\u20130.77",
+          "[PASS] Chroma floor           all 7 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #cc5c96\u2194#d2782d \u0394E 14.2 (deutan) \u00b7 tritan 4.3",
+          "[PASS] Normal-vision floor    worst adjacent #cc5c96\u2194#d2782d \u0394E 16.4 (normal)",
+          "[WARN] Contrast vs surface    below 3:1 \u2014 relief required (visible labels or table view): [[\"#cfa111\",2.33],[\"#09bdb1\",2.29]]"
+        ]
+      }
+    },
+    "gruvbox": {
+      "mode": "dark",
+      "surface": "#282828",
+      "ink": "#d4be98",
+      "monochrome": false,
+      "dropped": [
+        "cyan",
+        "red"
+      ],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#cd744a"
+        },
+        {
+          "slot": 2,
+          "hue": "blue",
+          "hex": "#16a691"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#b98422"
+        },
+        {
+          "slot": 4,
+          "hue": "magenta",
+          "hex": "#cc6c89"
+        },
+        {
+          "slot": 5,
+          "hue": "green",
+          "hex": "#8b9834"
+        }
+      ],
+      "worstAdjacentCVD": 9.4,
+      "worstAdjacentNormal": 15.3,
+      "diverging": {
+        "negative": "#cc6c89",
+        "midpoint": "#43403b",
+        "positive": "#16a691"
+      },
+      "ordinal": [
+        "#465e59",
+        "#587871",
+        "#6a9289",
+        "#7daea3"
+      ],
+      "sequential": [
+        "#213732",
+        "#2f4943",
+        "#3d5c55",
+        "#4c7068",
+        "#5c847b",
+        "#6c998f",
+        "#7daea3"
+      ],
+      "status": {
+        "good": "#8b9834",
+        "warning": "#b98422",
+        "serious": "#cd744a",
+        "critical": "#16a691"
+      },
+      "chrome": {
+        "surface": "#282828",
+        "ink": "#d4be98",
+        "secondary": "#bba988",
+        "muted": "#9c8d74",
+        "gridline": "#3a3834",
+        "baseline": "#4e4a42",
+        "other": "#5a5449",
+        "emphasisAccent": "#7daea3"
+      },
+      "contrast": {
+        "ink/surface": 8.16,
+        "muted/surface": 4.55,
+        "accent/surface": 5.94,
+        "urgent/surface": 5.94
+      },
+      "name": "Gruvbox",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 5 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 5 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #8b9834\u2194#cc6c89 \u0394E 9.4 (deutan) \u00b7 tritan 4.7",
+          "[PASS] Normal-vision floor    worst adjacent #cc6c89\u2194#b98422 \u0394E 15.3 (normal)",
+          "[PASS] Contrast vs surface    all 5 >= 3:1"
+        ]
+      }
+    },
+    "hackerman": {
+      "mode": "dark",
+      "surface": "#0B0C16",
+      "ink": "#ddf7ff",
+      "monochrome": false,
+      "dropped": [
+        "cyan"
+      ],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#45a571"
+        },
+        {
+          "slot": 2,
+          "hue": "blue",
+          "hex": "#688ddb"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#0ca68c"
+        }
+      ],
+      "worstAdjacentCVD": 12.9,
+      "worstAdjacentNormal": 16.9,
+      "diverging": {
+        "negative": "#688ddb",
+        "midpoint": "#2a2e39",
+        "positive": "#25aa50"
+      },
+      "ordinal": [
+        "#165227",
+        "#38864b",
+        "#5cbf72",
+        "#82fb9c"
+      ],
+      "sequential": [
+        "#002305",
+        "#004316",
+        "#0d652b",
+        "#2d8846",
+        "#49ad61",
+        "#65d37e",
+        "#82fb9c"
+      ],
+      "status": {
+        "good": "#4ba46d",
+        "warning": "#0ca68c",
+        "serious": "#45a571",
+        "critical": "#59a362"
+      },
+      "chrome": {
+        "surface": "#0B0C16",
+        "ink": "#ddf7ff",
+        "secondary": "#bed4dd",
+        "muted": "#96a8b1",
+        "gridline": "#1f222d",
+        "baseline": "#373d48",
+        "other": "#444c57",
+        "emphasisAccent": "#82FB9C"
+      },
+      "contrast": {
+        "ink/surface": 17.45,
+        "muted/surface": 7.91,
+        "accent/surface": 15.05,
+        "urgent/surface": 13.92
+      },
+      "name": "Hackerman",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 3 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 3 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #0ca68c\u2194#688ddb \u0394E 12.9 (deutan) \u00b7 tritan 3.8",
+          "[PASS] Normal-vision floor    worst adjacent #0ca68c\u2194#688ddb \u0394E 16.9 (normal)",
+          "[PASS] Contrast vs surface    all 3 >= 3:1"
+        ]
+      }
+    },
+    "kanagawa": {
+      "mode": "dark",
+      "surface": "#1f1f28",
+      "ink": "#dcd7ba",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#c86c4f"
+        },
+        {
+          "slot": 2,
+          "hue": "blue",
+          "hex": "#169dc6"
+        },
+        {
+          "slot": 3,
+          "hue": "green",
+          "hex": "#639a4b"
+        },
+        {
+          "slot": 4,
+          "hue": "magenta",
+          "hex": "#9a79cb"
+        },
+        {
+          "slot": 5,
+          "hue": "yellow",
+          "hex": "#b5861e"
+        },
+        {
+          "slot": 6,
+          "hue": "blue",
+          "hex": "#678ddb"
+        },
+        {
+          "slot": 7,
+          "hue": "cyan",
+          "hex": "#02a389"
+        }
+      ],
+      "worstAdjacentCVD": 12.9,
+      "worstAdjacentNormal": 16.9,
+      "diverging": {
+        "negative": "#678ddb",
+        "midpoint": "#3c3c40",
+        "positive": "#678ddb"
+      },
+      "ordinal": [
+        "#535353",
+        "#7c7c7c",
+        "#a8a8a8",
+        "#d6d6d6"
+      ],
+      "sequential": [
+        "#2b2b2b",
+        "#444444",
+        "#5f5f5f",
+        "#7b7b7b",
+        "#989898",
+        "#b6b6b6",
+        "#d6d6d6"
+      ],
+      "status": {
+        "good": "#639a4b",
+        "warning": "#b5861e",
+        "serious": "#c86c4f",
+        "critical": "#c34043"
+      },
+      "chrome": {
+        "surface": "#1f1f28",
+        "ink": "#dcd7ba",
+        "secondary": "#c0bca5",
+        "muted": "#9e9a8b",
+        "gridline": "#323238",
+        "baseline": "#484849",
+        "other": "#555453",
+        "emphasisAccent": "#dcd7ba"
+      },
+      "contrast": {
+        "ink/surface": 11.26,
+        "muted/surface": 5.8,
+        "accent/surface": 11.26,
+        "urgent/surface": 3.22
+      },
+      "name": "Kanagawa",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 7 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 7 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #02a389\u2194#678ddb \u0394E 12.9 (deutan) \u00b7 tritan 3.7",
+          "[PASS] Normal-vision floor    worst adjacent #02a389\u2194#678ddb \u0394E 16.9 (normal)",
+          "[PASS] Contrast vs surface    all 7 >= 3:1"
+        ]
+      }
+    },
+    "last-horizon": {
+      "mode": "dark",
+      "surface": "#0c0b0c",
+      "ink": "#FAFCFB",
+      "monochrome": true,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#474747"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#7e7e7e"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#bbbbbb"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#fbfbfb"
+        }
+      ],
+      "diverging": {
+        "negative": "#909090",
+        "midpoint": "#2f2e2f",
+        "positive": "#fbfbfb"
+      },
+      "ordinal": [
+        "#474747",
+        "#7e7e7e",
+        "#bbbbbb",
+        "#fbfbfb"
+      ],
+      "sequential": [
+        "#1c1c1c",
+        "#3b3b3b",
+        "#5e5e5e",
+        "#828282",
+        "#a9a9a9",
+        "#d1d1d1",
+        "#fbfbfb"
+      ],
+      "status": {
+        "good": "#a9aaaa",
+        "warning": "#838484",
+        "serious": "#d1d2d2",
+        "critical": "#cf7157"
+      },
+      "chrome": {
+        "surface": "#0c0b0c",
+        "ink": "#FAFCFB",
+        "secondary": "#d6d8d7",
+        "muted": "#a9aaaa",
+        "gridline": "#232223",
+        "baseline": "#3e3d3e",
+        "other": "#4d4d4d",
+        "emphasisAccent": "#b59790"
+      },
+      "contrast": {
+        "ink/surface": 19.07,
+        "muted/surface": 8.44,
+        "accent/surface": 7.29,
+        "urgent/surface": 6.83
+      },
+      "name": "Last Horizon",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #474747 at 2.11:1 vs surface",
+          "[PASS] Single hue             hue spread 0\u00b0"
+        ]
+      }
+    },
+    "lumon": {
+      "mode": "dark",
+      "surface": "#16242d",
+      "ink": "#d6e2ee",
+      "monochrome": true,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#3b5969"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#557c92"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#6fa2be"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#8bc9eb"
+        }
+      ],
+      "diverging": {
+        "negative": "#82909b",
+        "midpoint": "#34424c",
+        "positive": "#8bc9eb"
+      },
+      "ordinal": [
+        "#3b5969",
+        "#557c92",
+        "#6fa2be",
+        "#8bc9eb"
+      ],
+      "sequential": [
+        "#14313f",
+        "#264759",
+        "#385f74",
+        "#4c7890",
+        "#6092ae",
+        "#75adcc",
+        "#8bc9eb"
+      ],
+      "status": {
+        "good": "#3998d4",
+        "warning": "#3798d3",
+        "serious": "#239bcf",
+        "critical": "#2a88c4"
+      },
+      "chrome": {
+        "surface": "#16242d",
+        "ink": "#d6e2ee",
+        "secondary": "#bac6d2",
+        "muted": "#97a4af",
+        "gridline": "#2a3841",
+        "baseline": "#404e58",
+        "other": "#4d5b65",
+        "emphasisAccent": "#8bc9eb"
+      },
+      "contrast": {
+        "ink/surface": 12.06,
+        "muted/surface": 6.23,
+        "accent/surface": 8.8,
+        "urgent/surface": 4.04
+      },
+      "name": "Lumon",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #3b5969 at 2.13:1 vs surface",
+          "[PASS] Single hue             hue spread 1\u00b0"
+        ]
+      }
+    },
+    "lupine": {
+      "mode": "light",
+      "surface": "#fafafa",
+      "ink": "#212121",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "green",
+          "hex": "#9a80da"
+        },
+        {
+          "slot": 2,
+          "hue": "blue",
+          "hex": "#3163ea"
+        },
+        {
+          "slot": 3,
+          "hue": "red",
+          "hex": "#c800c3"
+        }
+      ],
+      "worstAdjacentCVD": 7.9,
+      "worstAdjacentNormal": 16.4,
+      "diverging": {
+        "negative": "#c800c3",
+        "midpoint": "#cecece",
+        "positive": "#3163ea"
+      },
+      "ordinal": [
+        "#8baefa",
+        "#6993f1",
+        "#4876e8",
+        "#2857de"
+      ],
+      "sequential": [
+        "#e0eafd",
+        "#c1d5fd",
+        "#a2c0ff",
+        "#83aaff",
+        "#6493ff",
+        "#497bf8",
+        "#3264eb"
+      ],
+      "status": {
+        "good": "#4b30d1",
+        "warning": "#0671e0",
+        "serious": "#0671e0",
+        "critical": "#c800c3"
+      },
+      "chrome": {
+        "surface": "#fafafa",
+        "ink": "#212121",
+        "secondary": "#393939",
+        "muted": "#5a5a5a",
+        "gridline": "#dddddd",
+        "baseline": "#bebebe",
+        "other": "#adadad",
+        "emphasisAccent": "#3264eb"
+      },
+      "contrast": {
+        "ink/surface": 15.43,
+        "muted/surface": 6.61,
+        "accent/surface": 4.84,
+        "urgent/surface": 4.7
+      },
+      "name": "Lupine",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 3 inside L 0.43\u20130.77",
+          "[PASS] Chroma floor           all 3 >= 0.1",
+          "[WARN] CVD separation         worst adjacent #c800c3\u2194#3163ea \u0394E 7.9 (protan) \u00b7 tritan 12.6",
+          "[PASS] Normal-vision floor    worst adjacent #3163ea\u2194#9a80da \u0394E 16.4 (normal)",
+          "[PASS] Contrast vs surface    all 3 >= 3:1"
+        ]
+      }
+    },
+    "matte-black": {
+      "mode": "dark",
+      "surface": "#121212",
+      "ink": "#bebebe",
+      "monochrome": true,
+      "dropped": [],
+      "note": "three hues still collide; ordinal fallback",
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#6a4008"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#91590b"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#bb730d"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#e68e0d"
+        }
+      ],
+      "diverging": {
+        "negative": "#727272",
+        "midpoint": "#2c2c2c",
+        "positive": "#e68e0d"
+      },
+      "ordinal": [
+        "#6a4008",
+        "#91590b",
+        "#bb730d",
+        "#e68e0d"
+      ],
+      "sequential": [
+        "#371a00",
+        "#502c00",
+        "#6b3e00",
+        "#885100",
+        "#a76400",
+        "#c67904",
+        "#e68e0d"
+      ],
+      "status": {
+        "good": "#b18827",
+        "warning": "#be2321",
+        "serious": "#c63d3d",
+        "critical": "#d35f5f"
+      },
+      "chrome": {
+        "surface": "#121212",
+        "ink": "#bebebe",
+        "secondary": "#a5a5a5",
+        "muted": "#858585",
+        "gridline": "#232323",
+        "baseline": "#373737",
+        "other": "#424242",
+        "emphasisAccent": "#e68e0d"
+      },
+      "contrast": {
+        "ink/surface": 10.08,
+        "muted/surface": 5.08,
+        "accent/surface": 7.35,
+        "urgent/surface": 4.97
+      },
+      "name": "Matte Black",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #6a4008 at 2.10:1 vs surface",
+          "[PASS] Single hue             hue spread 0\u00b0"
+        ]
+      }
+    },
+    "miasma": {
+      "mode": "dark",
+      "surface": "#222222",
+      "ink": "#c2c2b0",
+      "monochrome": true,
+      "dropped": [
+        "blue"
+      ],
+      "note": "three hues still collide; ordinal fallback",
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#51563b"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#676e4a"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#7e8759"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#95a068"
+        }
+      ],
+      "diverging": {
+        "negative": "#7d7d73",
+        "midpoint": "#3b3b39",
+        "positive": "#95a068"
+      },
+      "ordinal": [
+        "#51563b",
+        "#676e4a",
+        "#7e8759",
+        "#95a068"
+      ],
+      "sequential": [
+        "#2b3016",
+        "#373d1e",
+        "#434a27",
+        "#50572f",
+        "#5d6538",
+        "#6a7342",
+        "#78824b"
+      ],
+      "status": {
+        "good": "#458d48",
+        "warning": "#ba6733",
+        "serious": "#a3580f",
+        "critical": "#c2c2b0"
+      },
+      "chrome": {
+        "surface": "#222222",
+        "ink": "#c2c2b0",
+        "secondary": "#abab9c",
+        "muted": "#8e8e82",
+        "gridline": "#333331",
+        "baseline": "#464642",
+        "other": "#50504b",
+        "emphasisAccent": "#78824b"
+      },
+      "contrast": {
+        "ink/surface": 8.82,
+        "muted/surface": 4.8,
+        "accent/surface": 3.86,
+        "urgent/surface": 2.3
+      },
+      "name": "Miasma",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #51563b at 2.08:1 vs surface",
+          "[PASS] Single hue             hue spread 1\u00b0"
+        ]
+      }
+    },
+    "nord": {
+      "mode": "dark",
+      "surface": "#2e3440",
+      "ink": "#d8dee9",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "cyan",
+          "hex": "#08a4a3"
+        },
+        {
+          "slot": 2,
+          "hue": "yellow",
+          "hex": "#b3881d"
+        },
+        {
+          "slot": 3,
+          "hue": "magenta",
+          "hex": "#bc71b0"
+        },
+        {
+          "slot": 4,
+          "hue": "green",
+          "hex": "#749e49"
+        },
+        {
+          "slot": 5,
+          "hue": "cyan",
+          "hex": "#0a9fbd"
+        },
+        {
+          "slot": 6,
+          "hue": "orange",
+          "hex": "#cd744b"
+        },
+        {
+          "slot": 7,
+          "hue": "blue",
+          "hex": "#4b94d8"
+        },
+        {
+          "slot": 8,
+          "hue": "red",
+          "hex": "#c2616a"
+        }
+      ],
+      "worstAdjacentCVD": 13.7,
+      "worstAdjacentNormal": 16.4,
+      "diverging": {
+        "negative": "#b3881d",
+        "midpoint": "#494f5c",
+        "positive": "#4b94d8"
+      },
+      "ordinal": [
+        "#566677",
+        "#697e94",
+        "#7c97b2",
+        "#90b0d1"
+      ],
+      "sequential": [
+        "#303f4e",
+        "#3c4e5f",
+        "#495e72",
+        "#576e85",
+        "#647e99",
+        "#7390ad",
+        "#81a1c1"
+      ],
+      "status": {
+        "good": "#749e49",
+        "warning": "#b3881d",
+        "serious": "#cd744b",
+        "critical": "#c2616a"
+      },
+      "chrome": {
+        "surface": "#2e3440",
+        "ink": "#d8dee9",
+        "secondary": "#c0c6d1",
+        "muted": "#a1a7b3",
+        "gridline": "#404652",
+        "baseline": "#545a67",
+        "other": "#5f6672",
+        "emphasisAccent": "#81a1c1"
+      },
+      "contrast": {
+        "ink/surface": 9.25,
+        "muted/surface": 5.17,
+        "accent/surface": 4.64,
+        "urgent/surface": 3.05
+      },
+      "name": "Nord",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 8 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 8 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #749e49\u2194#bc71b0 \u0394E 13.7 (deutan) \u00b7 tritan 3.6",
+          "[PASS] Normal-vision floor    worst adjacent #0a9fbd\u2194#749e49 \u0394E 16.4 (normal)",
+          "[PASS] Contrast vs surface    all 8 >= 3:1"
+        ]
+      }
+    },
+    "osaka-jade": {
+      "mode": "dark",
+      "surface": "#111c18",
+      "ink": "#C1C497",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "blue",
+          "hex": "#1c9a6d"
+        },
+        {
+          "slot": 2,
+          "hue": "red",
+          "hex": "#f5493c"
+        },
+        {
+          "slot": 3,
+          "hue": "blue",
+          "hex": "#16a49a"
+        },
+        {
+          "slot": 4,
+          "hue": "orange",
+          "hex": "#b2691e"
+        },
+        {
+          "slot": 5,
+          "hue": "magenta",
+          "hex": "#d0669a"
+        },
+        {
+          "slot": 6,
+          "hue": "yellow",
+          "hex": "#a48f28"
+        }
+      ],
+      "worstAdjacentCVD": 10.5,
+      "worstAdjacentNormal": 16.7,
+      "diverging": {
+        "negative": "#d0669a",
+        "midpoint": "#2c362c",
+        "positive": "#1c9a6d"
+      },
+      "ordinal": [
+        "#345545",
+        "#426e59",
+        "#50886e",
+        "#5fa383"
+      ],
+      "sequential": [
+        "#0b2c1e",
+        "#163c2b",
+        "#214c39",
+        "#2c5d47",
+        "#386f56",
+        "#448165",
+        "#509475"
+      ],
+      "status": {
+        "good": "#48a165",
+        "warning": "#459451",
+        "serious": "#b2691e",
+        "critical": "#f5493c"
+      },
+      "chrome": {
+        "surface": "#111c18",
+        "ink": "#C1C497",
+        "secondary": "#a7ac85",
+        "muted": "#878d6e",
+        "gridline": "#232d25",
+        "baseline": "#374134",
+        "other": "#434c3d",
+        "emphasisAccent": "#509475"
+      },
+      "contrast": {
+        "ink/surface": 9.65,
+        "muted/surface": 5.04,
+        "accent/surface": 4.85,
+        "urgent/surface": 5.47
+      },
+      "name": "Osaka Jade",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 6 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 6 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #f5493c\u2194#1c9a6d \u0394E 10.5 (deutan) \u00b7 tritan 6.7",
+          "[PASS] Normal-vision floor    worst adjacent #d0669a\u2194#b2691e \u0394E 16.7 (normal)",
+          "[PASS] Contrast vs surface    all 6 >= 3:1"
+        ]
+      }
+    },
+    "retro-82": {
+      "mode": "dark",
+      "surface": "#05182e",
+      "ink": "#f6dcac",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "blue",
+          "hex": "#04a19b"
+        },
+        {
+          "slot": 2,
+          "hue": "red",
+          "hex": "#f24f1e"
+        },
+        {
+          "slot": 3,
+          "hue": "green",
+          "hex": "#009eaf"
+        },
+        {
+          "slot": 4,
+          "hue": "blue",
+          "hex": "#c77a37"
+        }
+      ],
+      "worstAdjacentCVD": 16.0,
+      "worstAdjacentNormal": 22.8,
+      "diverging": {
+        "negative": "#009eaf",
+        "midpoint": "#2a3745",
+        "positive": "#c77a37"
+      },
+      "ordinal": [
+        "#6b4526",
+        "#98653b",
+        "#c88651",
+        "#faa968"
+      ],
+      "sequential": [
+        "#3d1b00",
+        "#5a3008",
+        "#77461b",
+        "#965e2e",
+        "#b77641",
+        "#d88f54",
+        "#faa968"
+      ],
+      "status": {
+        "good": "#009eaf",
+        "warning": "#d96c2b",
+        "serious": "#c77a37",
+        "critical": "#f24f1e"
+      },
+      "chrome": {
+        "surface": "#05182e",
+        "ink": "#f6dcac",
+        "secondary": "#d3c09c",
+        "muted": "#a69c86",
+        "gridline": "#1e2d3d",
+        "baseline": "#3a444e",
+        "other": "#495156",
+        "emphasisAccent": "#faa968"
+      },
+      "contrast": {
+        "ink/surface": 13.39,
+        "muted/surface": 6.56,
+        "accent/surface": 9.3,
+        "urgent/surface": 5.37
+      },
+      "name": "Retro 82",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 4 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 4 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #c77a37\u2194#009eaf \u0394E 16.0 (protan) \u00b7 tritan 25.3",
+          "[PASS] Normal-vision floor    worst adjacent #c77a37\u2194#009eaf \u0394E 22.8 (normal)",
+          "[PASS] Contrast vs surface    all 4 >= 3:1"
+        ]
+      }
+    },
+    "ristretto": {
+      "mode": "dark",
+      "surface": "#2c2525",
+      "ink": "#e6d9db",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "blue",
+          "hex": "#d26f53"
+        },
+        {
+          "slot": 2,
+          "hue": "cyan",
+          "hex": "#08a695"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#b2881d"
+        },
+        {
+          "slot": 4,
+          "hue": "red",
+          "hex": "#e75471"
+        },
+        {
+          "slot": 5,
+          "hue": "magenta",
+          "hex": "#8584d9"
+        },
+        {
+          "slot": 6,
+          "hue": "green",
+          "hex": "#759f3d"
+        }
+      ],
+      "worstAdjacentCVD": 7.3,
+      "worstAdjacentNormal": 18.1,
+      "diverging": {
+        "negative": "#08a695",
+        "midpoint": "#494142",
+        "positive": "#d26f53"
+      },
+      "ordinal": [
+        "#7f4c3e",
+        "#a4614e",
+        "#cb775f",
+        "#f38d70"
+      ],
+      "sequential": [
+        "#522417",
+        "#6a3425",
+        "#844533",
+        "#9f5641",
+        "#ba6850",
+        "#d67a60",
+        "#f38d70"
+      ],
+      "status": {
+        "good": "#759f3d",
+        "warning": "#b2881d",
+        "serious": "#cf7250",
+        "critical": "#e75471"
+      },
+      "chrome": {
+        "surface": "#2c2525",
+        "ink": "#e6d9db",
+        "secondary": "#cbbfc1",
+        "muted": "#a99e9f",
+        "gridline": "#3f3838",
+        "baseline": "#554d4d",
+        "other": "#625959",
+        "emphasisAccent": "#f38d70"
+      },
+      "contrast": {
+        "ink/surface": 10.95,
+        "muted/surface": 5.78,
+        "accent/surface": 6.33,
+        "urgent/surface": 5.35
+      },
+      "name": "Ristretto",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 6 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 6 >= 0.1",
+          "[WARN] CVD separation         worst adjacent #e75471\u2194#b2881d \u0394E 7.3 (deutan) \u00b7 tritan 4.5",
+          "[PASS] Normal-vision floor    worst adjacent #b2881d\u2194#08a695 \u0394E 18.1 (normal)",
+          "[PASS] Contrast vs surface    all 6 >= 3:1"
+        ]
+      }
+    },
+    "rose-pine": {
+      "mode": "light",
+      "surface": "#faf4ed",
+      "ink": "#575279",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "cyan",
+          "hex": "#d4716e"
+        },
+        {
+          "slot": 2,
+          "hue": "magenta",
+          "hex": "#9971c2"
+        },
+        {
+          "slot": 3,
+          "hue": "orange",
+          "hex": "#cc7547"
+        },
+        {
+          "slot": 4,
+          "hue": "blue",
+          "hex": "#00b9d0"
+        },
+        {
+          "slot": 5,
+          "hue": "yellow",
+          "hex": "#e89b32"
+        },
+        {
+          "slot": 6,
+          "hue": "red",
+          "hex": "#bc5d79"
+        }
+      ],
+      "worstAdjacentCVD": 14.1,
+      "worstAdjacentNormal": 16.1,
+      "diverging": {
+        "negative": "#d4716e",
+        "midpoint": "#dad5d8",
+        "positive": "#00b9d0"
+      },
+      "ordinal": [
+        "#90b0b6",
+        "#6f99a0",
+        "#4f828b",
+        "#2c6c76"
+      ],
+      "sequential": [
+        "#c8eaf0",
+        "#b5dbe2",
+        "#a2cdd5",
+        "#8fbec7",
+        "#7cb0b9",
+        "#69a2ac",
+        "#56949f"
+      ],
+      "status": {
+        "good": "#009ac7",
+        "warning": "#e89b32",
+        "serious": "#cc7547",
+        "critical": "#bc5d79"
+      },
+      "chrome": {
+        "surface": "#faf4ed",
+        "ink": "#575279",
+        "secondary": "#6a6688",
+        "muted": "#84809b",
+        "gridline": "#e5dfdf",
+        "baseline": "#cec9d0",
+        "other": "#c2bdc7",
+        "emphasisAccent": "#56949f"
+      },
+      "contrast": {
+        "ink/surface": 6.66,
+        "muted/surface": 3.47,
+        "accent/surface": 3.14,
+        "urgent/surface": 3.84
+      },
+      "name": "Rose Pine",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 6 inside L 0.43\u20130.77",
+          "[PASS] Chroma floor           all 6 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #9971c2\u2194#d4716e \u0394E 14.1 (protan) \u00b7 tritan 13.7",
+          "[PASS] Normal-vision floor    worst adjacent #9971c2\u2194#d4716e \u0394E 16.1 (normal)",
+          "[WARN] Contrast vs surface    below 3:1 \u2014 relief required (visible labels or table view): [[\"#00b9d0\",2.17],[\"#e89b32\",2.1]]"
+        ]
+      }
+    },
+    "solitude": {
+      "mode": "dark",
+      "surface": "#101315",
+      "ink": "#cacccc",
+      "monochrome": true,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#4a4a4a"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#737373"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#9e9e9e"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#cbcbcb"
+        }
+      ],
+      "diverging": {
+        "negative": "#787b7c",
+        "midpoint": "#2c2f31",
+        "positive": "#cbcbcb"
+      },
+      "ordinal": [
+        "#4a4a4a",
+        "#737373",
+        "#9e9e9e",
+        "#cbcbcb"
+      ],
+      "sequential": [
+        "#212121",
+        "#3a3a3a",
+        "#545454",
+        "#707070",
+        "#8e8e8e",
+        "#acacac",
+        "#cbcbcb"
+      ],
+      "status": {
+        "good": "#8c8e8f",
+        "warning": "#6e7172",
+        "serious": "#aaadad",
+        "critical": "#cacccc"
+      },
+      "chrome": {
+        "surface": "#101315",
+        "ink": "#cacccc",
+        "secondary": "#afb1b1",
+        "muted": "#8c8e8f",
+        "gridline": "#222527",
+        "baseline": "#383b3d",
+        "other": "#444749",
+        "emphasisAccent": "#798186"
+      },
+      "contrast": {
+        "ink/surface": 11.56,
+        "muted/surface": 5.67,
+        "accent/surface": 4.7,
+        "urgent/surface": 2.78
+      },
+      "name": "Solitude",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #4a4a4a at 2.10:1 vs surface",
+          "[PASS] Single hue             hue spread 0\u00b0"
+        ]
+      }
+    },
+    "tokyo-night": {
+      "mode": "dark",
+      "surface": "#1a1b26",
+      "ink": "#a9b1d6",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#cf7159"
+        },
+        {
+          "slot": 2,
+          "hue": "magenta",
+          "hex": "#9b7cd2"
+        },
+        {
+          "slot": 3,
+          "hue": "green",
+          "hex": "#729f3b"
+        },
+        {
+          "slot": 4,
+          "hue": "cyan",
+          "hex": "#0fa1b3"
+        },
+        {
+          "slot": 5,
+          "hue": "yellow",
+          "hex": "#bb8323"
+        },
+        {
+          "slot": 6,
+          "hue": "blue",
+          "hex": "#668ce0"
+        },
+        {
+          "slot": 7,
+          "hue": "red",
+          "hex": "#dd5f78"
+        }
+      ],
+      "worstAdjacentCVD": 15.9,
+      "worstAdjacentNormal": 16.0,
+      "diverging": {
+        "negative": "#bb8323",
+        "midpoint": "#303242",
+        "positive": "#668ce0"
+      },
+      "ordinal": [
+        "#3c4f78",
+        "#506aa1",
+        "#6485cb",
+        "#7aa2f7"
+      ],
+      "sequential": [
+        "#16274d",
+        "#253a67",
+        "#354d82",
+        "#45619e",
+        "#5676bb",
+        "#688cd8",
+        "#7aa2f7"
+      ],
+      "status": {
+        "good": "#729f3b",
+        "warning": "#bb8323",
+        "serious": "#cf7159",
+        "critical": "#dd5f78"
+      },
+      "chrome": {
+        "surface": "#1a1b26",
+        "ink": "#a9b1d6",
+        "secondary": "#949bbd",
+        "muted": "#7a809c",
+        "gridline": "#292a38",
+        "baseline": "#3a3c4d",
+        "other": "#434659",
+        "emphasisAccent": "#7aa2f7"
+      },
+      "contrast": {
+        "ink/surface": 8.1,
+        "muted/surface": 4.39,
+        "accent/surface": 6.79,
+        "urgent/surface": 6.46
+      },
+      "name": "Tokyo Night",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 7 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 7 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #dd5f78\u2194#668ce0 \u0394E 15.9 (protan) \u00b7 tritan 6.7",
+          "[PASS] Normal-vision floor    worst adjacent #0fa1b3\u2194#729f3b \u0394E 16.0 (normal)",
+          "[PASS] Contrast vs surface    all 7 >= 3:1"
+        ]
+      }
+    },
+    "vantablack": {
+      "mode": "dark",
+      "surface": "#000000",
+      "ink": "#ffffff",
+      "monochrome": true,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#444444"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#7d7d7d"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#bcbcbc"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#ffffff"
+        }
+      ],
+      "diverging": {
+        "negative": "#808080",
+        "midpoint": "#121212",
+        "positive": "#ffffff"
+      },
+      "ordinal": [
+        "#444444",
+        "#7d7d7d",
+        "#bcbcbc",
+        "#ffffff"
+      ],
+      "sequential": [
+        "#161616",
+        "#363636",
+        "#5a5a5a",
+        "#808080",
+        "#a9a9a9",
+        "#d3d3d3",
+        "#ffffff"
+      ],
+      "status": {
+        "good": "#9e9e9e",
+        "warning": "#717171",
+        "serious": "#cecece",
+        "critical": "#ffffff"
+      },
+      "chrome": {
+        "surface": "#000000",
+        "ink": "#ffffff",
+        "secondary": "#d4d4d4",
+        "muted": "#9e9e9e",
+        "gridline": "#060606",
+        "baseline": "#222222",
+        "other": "#333333",
+        "emphasisAccent": "#8d8d8d"
+      },
+      "contrast": {
+        "ink/surface": 21.0,
+        "muted/surface": 7.84,
+        "accent/surface": 6.33,
+        "urgent/surface": 8.42
+      },
+      "name": "Vantablack",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #444444 at 2.16:1 vs surface",
+          "[PASS] Single hue             hue spread 0\u00b0"
+        ]
+      }
+    },
+    "white": {
+      "mode": "light",
+      "surface": "#ffffff",
+      "ink": "#000000",
+      "monochrome": true,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "ordinal",
+          "hex": "#b2b2b2"
+        },
+        {
+          "slot": 2,
+          "hue": "ordinal",
+          "hex": "#666666"
+        },
+        {
+          "slot": 3,
+          "hue": "ordinal",
+          "hex": "#232323"
+        },
+        {
+          "slot": 4,
+          "hue": "ordinal",
+          "hex": "#000000"
+        }
+      ],
+      "diverging": {
+        "negative": "#484848",
+        "midpoint": "#c4c4c4",
+        "positive": "#000000"
+      },
+      "ordinal": [
+        "#b2b2b2",
+        "#666666",
+        "#232323",
+        "#000000"
+      ],
+      "sequential": [
+        "#eeeeee",
+        "#bbbbbb",
+        "#8a8a8a",
+        "#5c5c5c",
+        "#323232",
+        "#0d0d0d",
+        "#000000"
+      ],
+      "status": {
+        "good": "#2e2e2e",
+        "warning": "#555555",
+        "serious": "#0b0b0b",
+        "critical": "#000000"
+      },
+      "chrome": {
+        "surface": "#ffffff",
+        "ink": "#000000",
+        "secondary": "#070707",
+        "muted": "#2e2e2e",
+        "gridline": "#d7d7d7",
+        "baseline": "#aeaeae",
+        "other": "#989898",
+        "emphasisAccent": "#6e6e6e"
+      },
+      "contrast": {
+        "ink/surface": 21.0,
+        "muted/surface": 13.58,
+        "accent/surface": 5.1,
+        "urgent/surface": 14.35
+      },
+      "name": "White",
+      "validator": {
+        "exit": 1,
+        "lines": [
+          "[PASS] Lightness monotone     steps read light\u2192dark",
+          "[PASS] Adjacent \u0394L            all gaps >= 0.06",
+          "[PASS] Light-end contrast     #b2b2b2 at 2.12:1 vs surface",
+          "[FAIL] Single hue             hue spread 90\u00b0 \u2014 >40\u00b0, not a one-hue ramp"
+        ]
+      }
+    },
+    "kraken-depths": {
+      "mode": "dark",
+      "surface": "#001425",
+      "ink": "#E6F7F8",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "blue",
+          "hex": "#109ec5"
+        },
+        {
+          "slot": 2,
+          "hue": "orange",
+          "hex": "#c8102e"
+        },
+        {
+          "slot": 3,
+          "hue": "green",
+          "hex": "#06a3a5"
+        }
+      ],
+      "worstAdjacentCVD": 16.5,
+      "worstAdjacentNormal": 33.8,
+      "diverging": {
+        "negative": "#c8102e",
+        "midpoint": "#213747",
+        "positive": "#06a3a5"
+      },
+      "ordinal": [
+        "#304f4f",
+        "#507a7a",
+        "#72a8a8",
+        "#96d8d8"
+      ],
+      "sequential": [
+        "#052626",
+        "#1b4040",
+        "#325b5b",
+        "#497979",
+        "#629797",
+        "#7cb7b7",
+        "#96d8d8"
+      ],
+      "status": {
+        "good": "#06a3a5",
+        "warning": "#06a3a5",
+        "serious": "#c8102e",
+        "critical": "#c8102e"
+      },
+      "chrome": {
+        "surface": "#001425",
+        "ink": "#E6F7F8",
+        "secondary": "#c4d6da",
+        "muted": "#98abb3",
+        "gridline": "#142b3b",
+        "baseline": "#2f4554",
+        "other": "#3f5462",
+        "emphasisAccent": "#96D8D8"
+      },
+      "contrast": {
+        "ink/surface": 16.88,
+        "muted/surface": 7.82,
+        "accent/surface": 11.64,
+        "urgent/surface": 3.17
+      },
+      "name": "Kraken Depths",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 3 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 3 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #06a3a5\u2194#c8102e \u0394E 16.5 (deutan) \u00b7 tritan 35.5",
+          "[PASS] Normal-vision floor    worst adjacent #06a3a5\u2194#c8102e \u0394E 33.8 (normal)",
+          "[PASS] Contrast vs surface    all 3 >= 3:1"
+        ]
+      }
+    },
+    "lake-sunset": {
+      "mode": "dark",
+      "surface": "#261C28",
+      "ink": "#F2E4DA",
+      "monochrome": false,
+      "dropped": [],
+      "categorical": [
+        {
+          "slot": 1,
+          "hue": "orange",
+          "hex": "#d27314"
+        },
+        {
+          "slot": 2,
+          "hue": "magenta",
+          "hex": "#c36ea3"
+        },
+        {
+          "slot": 3,
+          "hue": "yellow",
+          "hex": "#ba8323"
+        },
+        {
+          "slot": 4,
+          "hue": "blue",
+          "hex": "#5a72c1"
+        },
+        {
+          "slot": 5,
+          "hue": "green",
+          "hex": "#6ba050"
+        },
+        {
+          "slot": 6,
+          "hue": "cyan",
+          "hex": "#179ccc"
+        },
+        {
+          "slot": 7,
+          "hue": "red",
+          "hex": "#d36e5a"
+        }
+      ],
+      "worstAdjacentCVD": 15.1,
+      "worstAdjacentNormal": 16.8,
+      "diverging": {
+        "negative": "#179ccc",
+        "midpoint": "#463b44",
+        "positive": "#e85d24"
+      },
+      "ordinal": [
+        "#844027",
+        "#aa4e2c",
+        "#d05d31",
+        "#f86b36"
+      ],
+      "sequential": [
+        "#551300",
+        "#6c2000",
+        "#852c04",
+        "#9e390e",
+        "#b94718",
+        "#d35522",
+        "#ef632c"
+      ],
+      "status": {
+        "good": "#6ba050",
+        "warning": "#be8120",
+        "serious": "#d27314",
+        "critical": "#d36e5a"
+      },
+      "chrome": {
+        "surface": "#261C28",
+        "ink": "#F2E4DA",
+        "secondary": "#d4c7c0",
+        "muted": "#afa2a0",
+        "gridline": "#3b303b",
+        "baseline": "#534850",
+        "other": "#60555c",
+        "emphasisAccent": "#EF632C"
+      },
+      "contrast": {
+        "ink/surface": 13.2,
+        "muted/surface": 6.64,
+        "accent/surface": 5.07,
+        "urgent/surface": 4.93
+      },
+      "name": "Lake Sunset",
+      "validator": {
+        "exit": 0,
+        "lines": [
+          "[PASS] Lightness band         all 7 inside L 0.48\u20130.67",
+          "[PASS] Chroma floor           all 7 >= 0.1",
+          "[PASS] CVD separation         worst adjacent #ba8323\u2194#c36ea3 \u0394E 15.1 (deutan) \u00b7 tritan 3.2",
+          "[PASS] Normal-vision floor    worst adjacent #c36ea3\u2194#d27314 \u0394E 16.8 (normal)",
+          "[PASS] Contrast vs surface    all 7 >= 3:1"
+        ]
+      }
+    }
+  }
+}

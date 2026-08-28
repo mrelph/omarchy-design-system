@@ -946,5 +946,156 @@
     "separatorAlpha": 0.12,
     "dimText": "Qt.darker(fg, 1.4)",
     "bodyText": "Qt.darker(fg, 1.15)"
+  },
+  "motion": {
+    "curves": {
+      "easeOutQuint": "cubic-bezier(0.23,1,0.32,1)",
+      "easeInOutCubic": "cubic-bezier(0.65,0.05,0.36,1)",
+      "linear": "linear",
+      "almostLinear": "cubic-bezier(0.5,0.5,0.75,1)",
+      "quick": "cubic-bezier(0.15,0,0.1,1)"
+    },
+    "hyprlandDefaults": [
+      {
+        "leaf": "windows",
+        "ms": 379,
+        "curve": "easeOutQuint",
+        "style": ""
+      },
+      {
+        "leaf": "windowsIn",
+        "ms": 410,
+        "curve": "easeOutQuint",
+        "style": "popin 87%"
+      },
+      {
+        "leaf": "windowsOut",
+        "ms": 149,
+        "curve": "linear",
+        "style": "popin 87%"
+      },
+      {
+        "leaf": "fade",
+        "ms": 303,
+        "curve": "quick",
+        "style": ""
+      },
+      {
+        "leaf": "fadeIn",
+        "ms": 173,
+        "curve": "almostLinear",
+        "style": ""
+      },
+      {
+        "leaf": "fadeOut",
+        "ms": 146,
+        "curve": "almostLinear",
+        "style": ""
+      },
+      {
+        "leaf": "layersIn",
+        "ms": 400,
+        "curve": "easeOutQuint",
+        "style": "fade"
+      },
+      {
+        "leaf": "layersOut",
+        "ms": 150,
+        "curve": "linear",
+        "style": "fade"
+      },
+      {
+        "leaf": "border",
+        "ms": 539,
+        "curve": "easeOutQuint",
+        "style": ""
+      },
+      {
+        "leaf": "specialWorkspace",
+        "ms": 300,
+        "curve": "easeOutQuint",
+        "style": "slidevert"
+      }
+    ],
+    "ui": {
+      "enter": {
+        "ms": 400,
+        "curve": "easeOutQuint",
+        "style": "scale 0.87\u21921 + fade",
+        "from": "windowsIn / layersIn"
+      },
+      "exit": {
+        "ms": 150,
+        "curve": "linear",
+        "style": "scale 1\u21920.87 + fade",
+        "from": "windowsOut / layersOut"
+      },
+      "fade": {
+        "ms": 300,
+        "curve": "quick",
+        "style": "opacity only",
+        "from": "fade"
+      },
+      "micro": {
+        "ms": 150,
+        "curve": "almostLinear",
+        "style": "hover / focus / toggle knob",
+        "from": "fadeOut"
+      },
+      "emphasis": {
+        "ms": 540,
+        "curve": "easeOutQuint",
+        "style": "border colour, selection sweep",
+        "from": "border"
+      },
+      "reducedMotion": "Hyprland animations disabled or prefers-reduced-motion \u2192 all durations 0, keep end state"
+    }
+  },
+  "floatingWindow": {
+    "gapsOut": 10,
+    "gapsIn": 5,
+    "borderSize": 2,
+    "activeBorder": "theme accent (or hyprland.active-border gradient)",
+    "inactiveBorder": "rgba(595959aa)",
+    "rounding": 0,
+    "opacityActive": 0.985,
+    "opacityInactive": 0.96,
+    "shadow": false,
+    "blur": false,
+    "titlebar": "none (compositor-owned; app draws no chrome)",
+    "sizes": {
+      "dialog": "480\u00d7auto",
+      "utility": "640\u00d7480",
+      "app": "1200\u00d7800 or 60% 70%",
+      "palette": "640\u00d7420 (menu surface)"
+    },
+    "rule": "o.window({ class = \"^(your-app)$\" }, { float = true, size = \"1200 800\", center = true })"
+  },
+  "status": {
+    "good": "green",
+    "warning": "yellow",
+    "serious": "orange",
+    "critical": "red (= urgent)",
+    "info": "accent",
+    "rule": "always glyph + label; never colour alone; never reused as a series colour"
+  },
+  "iconography": {
+    "font": "Nerd Font glyphs from the monospace alias",
+    "sizes": {
+      "icon-small": 11,
+      "icon": 14,
+      "icon-large": 18,
+      "display": 24,
+      "display-large": 28
+    },
+    "rule": "one weight, optical centring via OpticalGlyph/BarIconButton, glyph colour = text colour of its row"
+  },
+  "density": {
+    "root": "[font] base-size in ~/.config/omarchy/shell.toml (omarchy display text size)",
+    "compact": 11,
+    "default": 12,
+    "comfortable": 14,
+    "large": 16,
+    "rule": "everything scales: spacing \u00d7 fontScale, bar \u00d7 fontScale"
   }
 }
