@@ -210,9 +210,9 @@ svg.addEventListener('pointerleave',function(){line.style.display='none';tip.sty
             body+=f'<rect class="cell" x="{38+c*52}" y="{r*22+12}" width="50" height="20" fill="var(--om-viz-seq-{step})" data-tip="<b>{v}</b> sessions · {d} {hh}:00"/>'
     for c,hh in enumerate(hours): body+=f'<text class="tick" x="{38+c*52+25}" y="184" text-anchor="middle">{hh}</text>'
     body+='</svg><div class="legend" style="align-items:center"><span>0</span>'+"".join(f'<i style="background:var(--om-viz-seq-{i});margin:0"></i>' for i in range(1,8))+'<span>6+</span><span style="color:var(--om-viz-muted)">sessions / 2h</span></div>'
-    body+='<div class="sep"></div><p class="om-h">Ordinal (ordered categories) — one hue, monotone lightness</p><svg viewBox="0 0 520 34" width="520" height="34">'
+    body+='<div class="sep"></div><p class="om-h">Ordinal (ordered categories) — one hue, monotone lightness</p><svg viewBox="0 0 520 44" width="520" height="44">'
     for i,(n,p) in enumerate((("Mite",34),("Squirt",28),("Peewee",22),("Bantam",16))):
-        body+=f'<rect class="bar" x="{i*130}" y="4" width="{p*3.6}" height="18" fill="var(--om-viz-ord-{i+1})" data-tip="<b>{p}</b> {n}"/><text class="lbl" x="{i*130}" y="32">{n}</text>'
+        body+=f'<rect class="bar" x="{i*130}" y="4" width="{p*3.6}" height="18" fill="var(--om-viz-ord-{i+1})" data-tip="<b>{p}</b> {n}"/><text class="lbl" x="{i*130}" y="40">{n}</text>'
     body+='</svg>'
     vpage("viz-heatmap.html","Data viz","Heatmap & ordinal",body)
 
@@ -283,9 +283,9 @@ kbd{font:inherit;font-size:10px;padding:1px 5px;border:1px solid var(--om-border
      '<div class="sep"></div><p class="om-h">Badges, chips, kbd — chrome-only colours; accent = highlighted, urgent = attention</p><div class="row"><span class="badge">default</span><span class="badge accent">accent</span><span class="badge urgent">󰀦 urgent</span><span class="chip on">󰄬 Weekend</span><span class="chip">Morning</span><span class="chip">Adult</span><span><kbd>Super</kbd> + <kbd>Space</kbd></span></div>')
 
     # ================================================================ evolution cards
-    body='<p class="om-h">Motion tokens — lifted from Hyprland’s default animation table (speed × 100 ms). UI motion mirrors window motion so apps feel like the compositor.</p><table class="tv" style="font-size:11px"><tr><th>Token</th><th>Duration</th><th>Curve</th><th>Style</th><th>From Hyprland</th></tr>'
+    body='<p class="om-h">Motion tokens — lifted from Hyprland’s default animation table (speed × 100 ms). UI motion mirrors window motion so apps feel like the compositor.</p><table class="tv" style="font-size:11px;text-align:left"><tr><th style="text-align:left">Token</th><th style="text-align:left">Duration</th><th style="text-align:left">Curve</th><th style="text-align:left">Style</th><th style="text-align:left">From Hyprland</th></tr>'
     for k,v in MOTION.items():
-        if isinstance(v,dict): body+=f'<tr><td>{k}</td><td>{v["ms"]} ms</td><td>{v["curve"]}</td><td>{v["style"]}</td><td style="color:var(--om-text-dim)">{v["from"]}</td></tr>'
+        if isinstance(v,dict): body+=f'<tr><td style="text-align:left">{k}</td><td style="text-align:left">{v["ms"]} ms</td><td style="text-align:left">{v["curve"]}</td><td style="text-align:left">{v["style"]}</td><td style="text-align:left;color:var(--om-text-dim)">{v["from"]}</td></tr>'
     body+='</table><p class="om-h" style="margin-top:16px">Curves (hover to play)</p><div class="row">'
     for k,v in CURVES.items():
         body+=f'<div style="width:150px"><div style="font-size:10px;color:var(--om-text-dim);margin-bottom:4px">{k}</div><div style="height:22px;border:1px solid var(--om-separator);position:relative;overflow:hidden" onmouseenter="this.firstElementChild.style.transform=\'translateX(118px)\'" onmouseleave="this.firstElementChild.style.transform=\'\'"><i style="display:block;position:absolute;left:4px;top:4px;width:14px;height:14px;background:var(--om-accent);transition:transform 540ms {v}"></i></div></div>'
@@ -293,7 +293,7 @@ kbd{font:inherit;font-size:10px;padding:1px 5px;border:1px solid var(--om-border
     body+='<p style="color:var(--om-text-dim);font-size:var(--om-font-caption);margin-top:16px">Respect <code>prefers-reduced-motion</code> and Hyprland <code>animations.enabled = false</code>: durations → 0, end state kept. QML: <code>Behavior on opacity { NumberAnimation { duration: 300; easing.bezierCurve: [0.15,0,0.1,1,1,1] } }</code>.</p>'
     page("motion.html","Foundations","Motion",body)
 
-    glyphs=[("󰖙","weather"),("󰤨","wifi"),("󰂯","bluetooth"),("󰕾","audio"),("󰍬","mic"),("󰁹","battery"),("󰃭","calendar"),("󰂚","bell"),("󰒓","settings"),("󰑐","refresh"),("󰐕","add"),("󰆴","delete"),("󰀦","warning"),("󰄬","check"),("󰅖","close"),("󰍉","search"),("󰇚","download"),("󰌆","key"),("","terminal"),("","git"),("󰚰","update"),("󰌌","keyboard"),("󰍹","monitor"),("󰒲","sleep")]
+    glyphs=[("󰖙","weather"),("󰤨","wifi"),("󰂯","bluetooth"),("󰕾","audio"),("󰍬","mic"),("󰁹","battery"),("󰃭","calendar"),("󰂚","bell"),("󰒓","settings"),("󰑐","refresh"),("󰐕","add"),("󰆴","delete"),("󰀦","warning"),("󰄬","check"),("󰅖","close"),("󰍉","search"),("󰇚","download"),("󰌆","key"),("󰆍","terminal"),("󰊢","git"),("󰚰","update"),("󰌌","keyboard"),("󰍹","monitor"),("󰒲","sleep")]
     body='<p class="om-h">Nerd Font glyphs only — same family as text, so icons inherit weight, colour, and the font the user picked. Sizes: icon-small 11 · icon 14 · icon-large 18 · display 24 · display-large 28.</p><div class="row" style="gap:6px">'
     for g,n in glyphs: body+=f'<div style="width:72px;text-align:center;padding:8px 0;border:1px solid var(--om-separator)"><div style="font-size:18px">{g}</div><div style="font-size:9px;color:var(--om-text-dim)">{n}</div></div>'
     body+='</div><div class="sep"></div><p class="om-h">Scale</p><div class="row" style="align-items:baseline;gap:18px">'+"".join(f'<span style="font-size:{s}px">󰖙<small style="font-size:9px;color:var(--om-text-dim)"> {n} {s}</small></span>' for n,s in (("icon-small",11),("icon",14),("icon-large",18),("display",24),("display-large",28)))+'</div>'
@@ -312,7 +312,7 @@ kbd{font:inherit;font-size:10px;padding:1px 5px;border:1px solid var(--om-border
     body+='<div style="height:10px"></div><div class="toast" style="border-color:var(--om-urgent)"><span style="color:var(--om-urgent)">󰀦</span><div>Booking failed — card declined</div></div>'
     body+='<div class="sep"></div><p class="om-h">Progress — determinate, indeterminate (sweep), stepped</p><div style="width:380px"><div class="prog"><i style="width:62%"></i></div><div style="font-size:10px;color:var(--om-text-dim);margin:4px 0 12px">Syncing 62%</div><div class="prog" style="position:relative;overflow:hidden"><i style="width:30%;position:absolute;animation:sw 1.2s var(--om-ease-easeInOutCubic) infinite"></i></div><style>@keyframes sw{from{left:-30%}to{left:100%}}</style><div style="font-size:10px;color:var(--om-text-dim);margin:4px 0 12px">Connecting…</div><div class="row" style="gap:4px">'+"".join(f'<div style="flex:1;height:4px;background:{"var(--om-foreground)" if i<3 else "var(--om-fill-selected)"}"></div>' for i in range(5))+'</div><div style="font-size:10px;color:var(--om-text-dim);margin-top:4px">Step 3 of 5</div></div>'
     body+='<div class="sep"></div><p class="om-h">Status — colour never alone</p><div class="row" style="gap:18px;font-size:11px"><span><span style="color:var(--om-status-good)">󰄬</span> good · connected</span><span><span style="color:var(--om-status-warning)">󰀦</span> warning · weak signal</span><span><span style="color:var(--om-status-serious)">󰀦</span> serious · 5% battery</span><span><span style="color:var(--om-status-critical)">󰅖</span> critical · unreachable</span><span><span style="color:var(--om-status-info)">󰋼</span> info · update available</span></div>'
-    page("feedback.html","Components","Feedback & status",body)
+    apage("feedback.html","Components","Feedback & status",body)
 
     # a11y contrast matrix
     rows=""
